@@ -16,13 +16,14 @@ class PdfServiceProvider extends ServiceProvider {
 	 *
 	 * @return void
 	 */
+	//the change!
 	public function register()
     {
         $this->app->singleton(Pdf::class, function ($app) {
             return new PDF;
         });
     }
-
+	
 	/**
 	 * Get the services provided by the provider.
 	 *
